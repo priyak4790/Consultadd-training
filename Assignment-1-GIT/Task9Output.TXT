@@ -1,0 +1,88 @@
+C:\Users\Phiu\Desktop\Javagithub>git add Assignment-1-GIT\Task9\index.html
+
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "Adding index in task9"
+[master 14f6aaa] Adding index in task9
+ 1 file changed, 60 insertions(+)
+ create mode 100644 Assignment-1-GIT/Task9/index.html
+
+C:\Users\Phiu\Desktop\Javagithub>git checkout -b my-feature1
+Switched to a new branch 'my-feature1'
+
+C:\Users\Phiu\Desktop\Javagithub>git add Assignment-1-GIT\Task9\about-us.html
+
+C:\Users\Phiu\Desktop\Javagithub>git add .
+
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "Adding about-us in task9"
+[my-feature1 31c466a] Adding about-us in task9
+ 4 files changed, 34 insertions(+), 2 deletions(-)
+ create mode 100644 Assignment-1-GIT/Task9/about-us.TXT
+ create mode 100644 Assignment-1-GIT/Task9/about-us.html
+ create mode 100644 Assignment-1-GIT/Task9/index.TXT
+
+C:\Users\Phiu\Desktop\Javagithub>git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+C:\Users\Phiu\Desktop\Javagithub>git add .
+
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "changed index in master"
+[master 45c2e6d] changed index in master
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+C:\Users\Phiu\Desktop\Javagithub>git merge my-feature1
+Auto-merging Assignment-1-GIT/Task9/index.html
+CONFLICT (content): Merge conflict in Assignment-1-GIT/Task9/index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\Phiu\Desktop\Javagithub>git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   Assignment-1-GIT/Task9/about-us.TXT
+        new file:   Assignment-1-GIT/Task9/about-us.html
+        new file:   Assignment-1-GIT/Task9/index.TXT
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   Assignment-1-GIT/Task9/index.html
+
+
+C:\Users\Phiu\Desktop\Javagithub>git diff
+diff --cc Assignment-1-GIT/Task9/index.html
+index 9649edd,f66316c..0000000
+--- a/Assignment-1-GIT/Task9/index.html
++++ b/Assignment-1-GIT/Task9/index.html
+@@@ -8,8 -8,8 +8,13 @@@
+                        <thead>
+                                <tr>
+                                        <th></th>
+++<<<<<<< HEAD
+ +                                      <th scope="colll">Home starter hosting</th>
+ +                                      <th scope="colll">Premium business hosting</th>
+++=======
++                                       <th scope="coll">Home starter hosting</th>
++                                       <th scope="coll">Premium business hosting</th>
+++>>>>>>> my-feature1
+                                </tr>
+                        </thead>
+                        <tbody>
+
+C:\Users\Phiu\Desktop\Javagithub>git log --merge
+commit 45c2e6d9da17e20aff9b48800cb829d6457fb803 (HEAD -> master)
+Author: priyak4790 <priyak4790@gmail.com>
+Date:   Tue Feb 16 02:15:08 2021 -0600
+
+    changed index in master
+
+commit 31c466ab9b7d1eb9c6b9b8be65d3262e47123849 (my-feature1)
+Author: priyak4790 <priyak4790@gmail.com>
+Date:   Tue Feb 16 02:13:27 2021 -0600
+
+    Adding about-us in task9
