@@ -1,28 +1,58 @@
 C:\Users\Phiu\Desktop\Javagithub>git add .
 
-C:\Users\Phiu\Desktop\Javagithub>git commit -m "Task8 commit--1"
-[master 66e4b96] Task8 commit--1
- 1 file changed, 36 insertions(+)
- create mode 100644 Assignment-1-GIT/Task8/index.html
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "Task8 commit1"
+[master 41f5144] Task8 commit1
+ 3 files changed, 42 insertions(+), 62 deletions(-)
+ rename Assignment-1-GIT/{Task8 => Task-8}/index.html (100%)
+ rewrite Assignment-1-GIT/Task7Output.TXT (73%)
+ delete mode 100644 Assignment-1-GIT/Task8/about-us.html
 
-C:\Users\Phiu\Desktop\Javagithub>git checkout -b my-features
-Switched to a new branch 'my-features'
+C:\Users\Phiu\Desktop\Javagithub>git checkout -b my-featuress
+Switched to a new branch 'my-featuress'
 
-C:\Users\Phiu\Desktop\Javagithub>git add Assignment-1-GIT\Task8\about-us.html
+C:\Users\Phiu\Desktop\Javagithub>git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 974 bytes | 487.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/priyak4790/Consultadd-training.git
+   80889d6..41f5144  master -> master
 
-C:\Users\Phiu\Desktop\Javagithub>git commit -m "Add my-feature branch"
-[my-features e1169d2] Add my-feature branch
+C:\Users\Phiu\Desktop\Javagithub>git checkout my-featuress
+Already on 'my-featuress'
+
+C:\Users\Phiu\Desktop\Javagithub>git add Assignment-1-GIT\Task-8\about-us.html
+
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "Adding about-us to my featuress"
+[my-featuress 60939de] Adding about-us to my featuress
  1 file changed, 32 insertions(+)
- create mode 100644 Assignment-1-GIT/Task8/about-us.html
+ create mode 100644 Assignment-1-GIT/Task-8/about-us.html
+
+C:\Users\Phiu\Desktop\Javagithub>git push origin my-featuress
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 689 bytes | 689.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'my-featuress' on GitHub by visiting:
+remote:      https://github.com/priyak4790/Consultadd-training/pull/new/my-featuress
+remote:
+To https://github.com/priyak4790/Consultadd-training.git
+ * [new branch]      my-featuress -> my-featuress
 
 C:\Users\Phiu\Desktop\Javagithub>git checkout master
 Switched to branch 'master'
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
+Your branch is up to date with 'origin/master'.
 
-C:\Users\Phiu\Desktop\Javagithub>git merge my-features
-Updating 66e4b96..e1169d2
+C:\Users\Phiu\Desktop\Javagithub>git merge my-featuress
+Updating 41f5144..60939de
 Fast-forward
- Assignment-1-GIT/Task8/about-us.html | 32 ++++++++++++++++++++++++++++++++
+ Assignment-1-GIT/Task-8/about-us.html | 32 ++++++++++++++++++++++++++++++++
  1 file changed, 32 insertions(+)
- create mode 100644 Assignment-1-GIT/Task8/about-us.html
+ create mode 100644 Assignment-1-GIT/Task-8/about-us.html
