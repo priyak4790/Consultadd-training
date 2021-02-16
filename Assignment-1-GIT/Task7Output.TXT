@@ -1,0 +1,30 @@
+C:\Users\Phiu\Desktop\Javagithub>git add .
+
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "Task7 commit--1"
+[master d59dea8] Task7 commit--1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Assignment-1-GIT/Task7/{about.html => about1.html} (100%)
+
+C:\Users\Phiu\Desktop\Javagithub>git add .
+
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "Task7 commit--2"
+[master 98de006] Task7 commit--2
+ 1 file changed, 3 insertions(+)
+ create mode 100644 Assignment-1-GIT/Task7/index.html
+
+C:\Users\Phiu\Desktop\Javagithub>git add .
+
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "Task7 commit--3"
+[master 48c22d2] Task7 commit--3
+ 2 files changed, 12 insertions(+), 3 deletions(-)
+ create mode 100644 Assignment-1-GIT/Task7/index1.html
+
+C:\Users\Phiu\Desktop\Javagithub>git reset --hard HEAD~
+HEAD is now at 98de006 Task7 commit--2
+
+C:\Users\Phiu\Desktop\Javagithub>git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
