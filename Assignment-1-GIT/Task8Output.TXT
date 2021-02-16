@@ -1,0 +1,28 @@
+C:\Users\Phiu\Desktop\Javagithub>git add .
+
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "Task8 commit--1"
+[master 66e4b96] Task8 commit--1
+ 1 file changed, 36 insertions(+)
+ create mode 100644 Assignment-1-GIT/Task8/index.html
+
+C:\Users\Phiu\Desktop\Javagithub>git checkout -b my-features
+Switched to a new branch 'my-features'
+
+C:\Users\Phiu\Desktop\Javagithub>git add Assignment-1-GIT\Task8\about-us.html
+
+C:\Users\Phiu\Desktop\Javagithub>git commit -m "Add my-feature branch"
+[my-features e1169d2] Add my-feature branch
+ 1 file changed, 32 insertions(+)
+ create mode 100644 Assignment-1-GIT/Task8/about-us.html
+
+C:\Users\Phiu\Desktop\Javagithub>git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+C:\Users\Phiu\Desktop\Javagithub>git merge my-features
+Updating 66e4b96..e1169d2
+Fast-forward
+ Assignment-1-GIT/Task8/about-us.html | 32 ++++++++++++++++++++++++++++++++
+ 1 file changed, 32 insertions(+)
+ create mode 100644 Assignment-1-GIT/Task8/about-us.html
