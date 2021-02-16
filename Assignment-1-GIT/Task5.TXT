@@ -1,0 +1,11 @@
+C:\Users\Phiu\Desktop\Javagithub>git stash
+Saved working directory and index state WIP on master: f9d0e6d Adding files to take3
+
+C:\Users\Phiu\Desktop\Javagithub>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\Phiu\Desktop\Javagithub>git stash list
+stash@{0}: WIP on master: f9d0e6d Adding files to take3
