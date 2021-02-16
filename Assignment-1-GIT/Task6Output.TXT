@@ -1,4 +1,4 @@
-C:\Users\Phiu\Desktop\Javagithub>git reset c7a9efa
+C:\Users\Phiu\Desktop\Javagithub>git reset --soft HEAD~
 
 C:\Users\Phiu\Desktop\Javagithub>git status
 On branch master
