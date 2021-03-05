@@ -21,7 +21,7 @@ public class Program12SubArray {
 			{
 			if(arr[i]+arr[j]==n)
 			{
-				System.out.println(" The numbers are:" + arr[i] + " and " +arr[j]);
+				System.out.println(" The numbers are: " + arr[i] + " and " +arr[j]);
 			}
 		}
 	}
